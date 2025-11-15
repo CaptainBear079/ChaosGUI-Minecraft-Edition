@@ -1,0 +1,14 @@
+{
+    "format_version": "1.20.80",
+    "animations": {
+        "animation.mob_talker_cupa.poison": {
+            "loop": true,
+            "animation_length": 1,
+            "timeline": {
+                "0.0": [
+                    "/effect @s poison 2 0 true"
+                ]
+            }
+        }
+    }
+}

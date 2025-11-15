@@ -1,0 +1,45 @@
+{
+	"type": "minecraftBedrock",
+	"name": "ChaosGUI Minecraft Edition",
+	"namespace": "chaosgui",
+	"authors": [
+		"- Hacklord Captain Bear"
+	],
+	"targetVersion": "1.21.130",
+	"description": "Minecraft edition of ChaosGUI by Hacklord Captain Bear (@CaptainBear079 on Github)",
+	"experimentalGameplay": {
+		"upcomingCreatorFeatures": true,
+		"experimentalCreatorCameraFeatures": true,
+		"enableGameTestFramework": true,
+		"renderDragonFeatures": true,
+		"educationEdition": true
+	},
+	"bdsProject": true,
+	"packs": {
+		"behaviorPack": "./BP",
+		"resourcePack": "./RP",
+		"skinPack": "./SP"
+	},
+	"worlds": [
+		"./worlds/*"
+	],
+	"compiler": {
+		"plugins": [
+			"generatorScripts",
+			"typeScript",
+			"entityIdentifierAlias",
+			"customEntityComponents",
+			"customItemComponents",
+			"customBlockComponents",
+			"customCommands",
+			"moLang",
+			"formatVersionCorrection",
+			[
+				"simpleRewrite",
+				{
+					"packName": "ChaosGUI Minecraft Edition"
+				}
+			]
+		]
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "chaosgui:birth_control_pill",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:icon": "chaosgui_birth_control_pill",
+			"minecraft:max_stack_size": 1,
+			"minecraft:stacked_by_data": false,
+			"minecraft:display_name": {
+				"value": "Birth Control Pill"
+			},
+			"minecraft:durability": {
+				"max_durability": 20
+			},
+			"minecraft:use_modifiers": {
+				"use_duration": 32,
+				"movement_modifier": 0.5
+			}
+		}
+	}
+}

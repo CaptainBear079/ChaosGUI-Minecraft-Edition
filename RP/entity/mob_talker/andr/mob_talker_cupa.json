@@ -1,0 +1,38 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "chaosgui:mob_talker_andr",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/mob_talker/andr/mob_talker_andr",
+				"underwear": "textures/entity/mob_talker/andr/mob_talker_andr_underwear"
+			},
+			"geometry": {
+				"default": "geometry.mob_talker_andr",
+				"underwear": "geometry.mob_talker_andr_underwear"
+			},
+			"render_controllers": [
+				"controller.render.mob_talker_andr",
+				"controller.render.mob_talker_andr_underwear"
+			],
+			"animations": {
+				"idle": "animation.mob_talker_andr.idle",
+				"walk": "animation.mob_talker_andr.walk",
+				"run": "animation.mob_talker_andr.run",
+				"mob_talker_andr": "controller.animation.mob_talker_andr"
+			},
+			"scripts": {
+				"animate": [
+					"mob_talker_andr"
+				]
+			},
+			"spawn_egg": {
+				"base_color": "#000000",
+				"overlay_color": "#C439EE"
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"resource_pack_name": "ChaosGUI Minecraft Edition",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"chaosgui_condom": {
+			"textures": "textures/items/sex/condom"
+		},
+		"chaosgui_birth_control_pill": {
+			"textures": "textures/items/sex/birth_control_pill"
+		}
+	}
+}

@@ -1,0 +1,38 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "chaosgui:mob_talker_cupa",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/mob_talker/cupa/mob_talker_cupa",
+				"underwear": "textures/entity/mob_talker/cupa/mob_talker_cupa_underwear"
+			},
+			"geometry": {
+				"default": "geometry.mob_talker_cupa",
+				"underwear": "geometry.mob_talker_cupa_underwear"
+			},
+			"render_controllers": [
+				"controller.render.mob_talker_cupa",
+				"controller.render.mob_talker_cupa_underwear"
+			],
+			"animations": {
+				"idle": "animation.mob_talker_cupa.idle",
+				"walk": "animation.mob_talker_cupa.walk",
+				"run": "animation.mob_talker_cupa.run",
+				"mob_talker_cupa": "controller.animation.mob_talker_cupa"
+			},
+			"scripts": {
+				"animate": [
+					"mob_talker_cupa"
+				]
+			},
+			"spawn_egg": {
+				"base_color": "#2F7C28",
+				"overlay_color": "#FF7829"
+			}
+		}
+	}
+}

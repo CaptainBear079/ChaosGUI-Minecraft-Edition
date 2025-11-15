@@ -1,0 +1,29 @@
+{
+	"format_version": "1.20.80",
+	"animation_controllers": {
+		"controller.animation.mob_talker_cupa.default": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"aquaphobia_c": "query.is_in_water_or_rain"
+						}
+					]
+				},
+				"aquaphobia_c": {
+					"animations": [
+						"aquaphobia"
+					],
+					"on_exit": [
+						"/effect @s regeneration 2 4 true"
+					],
+					"transitions": [
+						{
+							"default": "query.is_in_water_or_rain==0"
+						}
+					]
+				}
+			}
+		}
+	}
+}

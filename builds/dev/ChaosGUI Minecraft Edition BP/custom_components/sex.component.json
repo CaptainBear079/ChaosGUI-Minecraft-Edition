@@ -1,0 +1,11 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:custom_component": {
+        "description": {
+            "identifier": "chaosgui:sex"
+        },
+        "properties": {
+            "gender": { "type": "enum", "default": "neutral" }
+        }
+    }
+}

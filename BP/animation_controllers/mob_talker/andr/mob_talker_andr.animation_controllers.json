@@ -1,0 +1,60 @@
+{
+    "format_version": "1.20.80",
+    "animation_controllers": {
+        "controller.animation.mob_talker_andr.default": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "idle_bp_c": "query.is_alive"
+                        }
+                    ]
+                },
+                "idle_bp_c": {
+                    "on_entry": [
+                        "/event entity @s chaosgui:mob_talker_andr_sa_idle"
+                    ],
+                    "transitions": [
+                        {
+                            "walk_bp_c": "query.is_moving"
+                        },
+                        {
+                            "aquaphobia_bp_c": "query.is_in_water_or_rain"
+                        }
+                    ]
+                },
+                "walk_bp_c": {
+                    "on_entry": [
+                        "/event entity @s chaosgui:mob_talker_andr_sa_walk"
+                    ],
+                    "transitions": [
+                        {
+                            "idle_bp_c": "!query.is_moving"
+                        },
+                        {
+                            "aquaphobia_bp_c": "query.is_in_water_or_rain"
+                        }
+                    ]
+                },
+                "run_bp_c": {},
+                "aquaphobia_bp_c": {
+                    "animations": [
+                        "aquaphobia"
+                    ],
+                    "on_entry": [
+                        "/event entity @s chaosgui:mob_talker_andr_sa_none"
+                    ],
+                    "on_exit": [
+                        "/effect @s regeneration 2 4 true"
+                    ],
+                    "transitions": [
+                        {
+                            "idle_bp_c": "query.is_in_water_or_rain == 0"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

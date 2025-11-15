@@ -1,0 +1,83 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"- Hacklord Captain Bear"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.7.52"
+			],
+			"dash": [
+				"0.11.7"
+			]
+		}
+	},
+	"header": {
+		"name": "ChaosGUI Minecraft Edition",
+		"description": "Minecraft edition of ChaosGUI by Hacklord Captain Bear (@CaptainBear079 on Github)",
+		"min_engine_version": [
+			1,
+			21,
+			120
+		],
+		"uuid": "e473cbee-7b73-4d2c-a6be-e7f8af6794a3",
+		"version": [
+			1,
+			0,
+			11
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "c8c0e0eb-023f-4831-afee-45ce5afea1cc",
+			"version": [
+				1,
+				0,
+				0
+			]
+		},
+		{
+			"type": "script",
+			"language": "javascript",
+			"uuid": "0786b261-735a-4d61-9380-bbb0ca686b40",
+			"entry": "scripts/main.js",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "ab7ae941-cdab-49ef-b81c-d5666f8414ab",
+			"version": [
+				1,
+				0,
+				11
+			]
+		},
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.0.0-beta"
+		},
+		{
+			"module_name": "@minecraft/server-gametest",
+			"version": "1.0.0-beta"
+		},
+		{
+			"module_name": "@minecraft/server-ui",
+			"version": "1.0.0-beta"
+		},
+		{
+			"module_name": "@minecraft/server-admin",
+			"version": "1.0.0-beta"
+		},
+		{
+			"module_name": "@minecraft/server-net",
+			"version": "1.0.0-beta"
+		}
+	]
+}

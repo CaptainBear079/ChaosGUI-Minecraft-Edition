@@ -1,0 +1,172 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "chaosgui:mob_talker_andr",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "is_experimental": false,
+            "animations": {
+                "default": "controller.animation.mob_talker_andr.default",
+                "poison": "animation.mob_talker_andr.poison",
+                "aquaphobia": "animation.mob_talker_andr.aquaphobia"
+            },
+            "scripts": {
+                "animate": [
+                    "default"
+                ]
+            }
+        },
+        "component_groups": {
+            "chaosgui:mob_talker_andr": {
+                "minecraft:variant": {
+                    "value": 0
+                }
+            },
+            "chaosgui:mob_talker_andr_sleeping_cloth": {
+                "minecraft:variant": {
+                    "value": 1
+                }
+            },
+            "chaosgui:mob_talker_andr_bikini": {
+                "minecraft:variant": {
+                    "value": 2
+                }
+            },
+            "chaosgui:mob_talker_andr_underwear": {
+                "minecraft:variant": {
+                    "value": 3
+                }
+            }
+        },
+        "components": {
+            "minecraft:type_family": {
+                "family": [
+                    "mob_talker",
+                    "enderman",
+                    "female_human"
+                ]
+            },
+            "minecraft:health": {
+                "max": 45,
+                "value": 45
+            },
+            "minecraft:collision_box": {
+                "height": 1.7,
+                "width": 0.6
+            },
+            "minecraft:physics": {},
+            "minecraft:movement": {
+                "value": 0.25
+            },
+            "minecraft:movement.basic": {},
+            "minecraft:navigation.walk": {
+                "can_jump": true,
+                "can_open_doors": true,
+                "can_path_over_water": false,
+                "can_path_over_lava": false,
+                "can_pass_doors": true,
+                "avoid_sun": false,
+                "avoid_water": false
+            },
+            "minecraft:can_climb": {},
+            "minecraft:jump.static": {},
+            "minecraft:behavior.tempt": {
+                "priority": 1,
+                "speed_multiplier": 1.4,
+                "items": [
+                    "minecraft:tnt",
+                    "minecraft:tnt_minecart"
+                ],
+                "within_radius": 8.0
+            },
+            "minecraft:behavior.random_stroll": {
+                "priority": 2,
+                "speed_multiplier": 0.7
+            },
+            "minecraft:experience_reward": {
+                "on_bred": 500,
+                "on_death": 100
+            },
+            "chaosgui:sex": {
+                "gender": "female",
+                "virgin": true
+            },
+            "chaosgui:endergirl_mentality": {
+                "default_embarresment": 0.0,
+                "sex": 95.0,
+                "masturbation": 40.0,
+                "default_stability": 95.0,
+                "aquaphobia": 45.0,
+                "painful_sex": 5.0,
+                "mutilation": 15.0
+            },
+            "chaosgui:endergirl_body": {
+                "has_enderpearl": true,
+                "last_birth_control_pill": 0,
+                "female_condom": false,
+                "spiral": false,
+                "default_arousal": 35.5,
+                "arousal_addition": 1.0,
+                "breasts": "flat",
+                "ass": "small",
+                "mouth_deepth_in_cm": 8.1,
+                "clit_sensitivity": 9.8,
+                "womb_capacity_in_l": 5.7,
+                "ass_capacity_in_l": 7.1,
+                "vagina_width_in_cm": 2.5,
+                "max_children": 4,
+                "period_in_ticks": 744000
+            }
+        },
+        "events": {
+            "minecraft:entity_spawned": {
+                "add": {
+                    "component_groups": [
+                        "chaosgui:mob_talker_andr"
+                    ]
+                },
+                "run_command": {
+                    "command": [
+                        "event entity @s chaosgui:mob_talker_andr_join"
+                    ]
+                }
+            },
+            "chaosgui:mob_talker_andr_join": {
+                "run_command": {
+                    "command": [
+                        "tellraw @a {\"rawtext\":[{\"text\":\"§eAndr joined the game\"}]}"
+                    ]
+                }
+            },
+            "chaosgui:mob_talker_andr_sa_none": {
+                "run_command": {
+                    "command": [
+                        "event entity @s RP_mob_talker_andr_sa_none"
+                    ]
+                }
+            },
+            "chaosgui:mob_talker_andr_sa_idle": {
+                "run_command": {
+                    "command": [
+                        "event entity @s RP_mob_talker_andr_sa_idle"
+                    ]
+                }
+            },
+            "chaosgui:mob_talker_andr_sa_walk": {
+                "run_command": {
+                    "command": [
+                        "event entity @s RP_mob_talker_andr_sa_walk"
+                    ]
+                }
+            },
+            "chaosgui:mob_talker_andr_sa_run": {
+                "run_command": {
+                    "command": [
+                        "event entity @s RP_mob_talker_andr_sa_run"
+                    ]
+                }
+            }
+        }
+    }
+}

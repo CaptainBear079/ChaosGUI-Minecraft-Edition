@@ -1,0 +1,32 @@
+{
+    "format_version": "1.20.80",
+    "animation_controllers": {
+        "controller.animation.mob_talker_cupa.default": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "idle_bp_c": true
+                        }
+                    ]
+                },
+                "idle_bp_c": {
+                    "transitions": [
+                        {
+                            "walk_bp_c": "query.is_moving"
+                        }
+                    ]
+                },
+                "walk_bp_c": {
+                    "transitions": [
+                        {
+                            "idle_bp_c": "!query.is_moving"
+                        }
+                    ]
+                },
+                "run_bp_c": {}
+            }
+        }
+    }
+}

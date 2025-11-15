@@ -1,0 +1,43 @@
+{
+	"format_version": "1.20.80",
+	"animation_controllers": {
+		"controller.animation.mob_talker_cupa": {
+			"initial_state": "default_rp_c",
+			"states": {
+				"default_rp_c": {
+					"transitions": [
+						{
+							"idle_rp_c": "query.is_alive"
+						}
+					]
+				},
+				"idle_rp_c": {
+					"animations": [
+						"idle"
+					],
+					"transitions": [
+						{
+							"walk_rp_c": "query.is_on_ground&&query.is_moving"
+						}
+					]
+				},
+				"walk_rp_c": {
+					"animations": [
+						"walk"
+					],
+					"transitions": [
+						{
+							"idle_rp_c": "query.is_on_ground&&!query.is_moving"
+						}
+					]
+				},
+				"run_rp_c": {
+					"animations": [
+						"run"
+					],
+					"transitions": []
+				}
+			}
+		}
+	}
+}

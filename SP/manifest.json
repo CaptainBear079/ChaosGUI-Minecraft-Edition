@@ -1,0 +1,42 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"- Hacklord Captain Bear"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.7.52"
+			],
+			"dash": [
+				"0.11.7"
+			]
+		}
+	},
+	"header": {
+		"name": "ChaosGUI Minecraft Edition",
+		"description": "Minecraft edition of ChaosGUI by Hacklord Captain Bear (@CaptainBear079 on Github)",
+		"min_engine_version": [
+			1,
+			21,
+			120
+		],
+		"uuid": "582577b9-cfbb-435c-a99f-faa442ce59c0",
+		"version": [
+			1,
+			0,
+			11
+		]
+	},
+	"modules": [
+		{
+			"type": "skin_pack",
+			"uuid": "52f93f25-d527-4d69-a2a8-39bb554ee2a7",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
+}
