@@ -87,9 +87,103 @@
 				"on_bred": 500,
 				"on_death": 100
 			},
-			"chaosgui:sex": {
-				"gender": "female",
-				"virgin": true
+			"minecraft:dynamic_property": {
+				"chaosgui:gender": {
+					"type": "string",
+					"value": "female"
+				},
+				"chaosgui:virgin": {
+					"type": "bool",
+					"value": true
+				},
+				"chaosgui:default_embarresment": {
+					"type": "float",
+					"value": 0
+				},
+				"chaosgui:sex": {
+					"type": "float",
+					"value": 95
+				},
+				"chaosgui:masturbation": {
+					"type": "float",
+					"value": 40
+				},
+				"chaosgui:default_stability": {
+					"type": "float",
+					"value": 95
+				},
+				"chaosgui:aquaphobia": {
+					"type": "float",
+					"value": 45
+				},
+				"chaosgui:painful_sex": {
+					"type": "float",
+					"value": 5
+				},
+				"chaosgui:mutilation": {
+					"type": "float",
+					"value": 15
+				},
+				"chaosgui:has_egg_cell": {
+					"type": "bool",
+					"value": true
+				},
+				"chaosgui:last_birth_control_pill": {
+					"type": "int",
+					"value": 0
+				},
+				"chaosgui:female_condom": {
+					"type": "bool",
+					"value": false
+				},
+				"chaosgui:spiral": {
+					"type": "bool",
+					"value": false
+				},
+				"chaosgui:default_arousal": {
+					"type": "float",
+					"value": 35.5
+				},
+				"chaosgui:arousal_addition": {
+					"type": "float",
+					"value": 1
+				},
+				"chaosgui:breasts": {
+					"type": "string",
+					"value": "flat"
+				},
+				"chaosgui:ass": {
+					"type": "string",
+					"value": "small"
+				},
+				"chaosgui:mouth_deepth_in_cm": {
+					"type": "float",
+					"value": 8.1
+				},
+				"chaosgui:clit_sensitivity": {
+					"type": "float",
+					"value": 9.8
+				},
+				"chaosgui:womb_capacity_in_l": {
+					"type": "float",
+					"value": 5.7
+				},
+				"chaosgui:ass_capacity_in_l": {
+					"type": "float",
+					"value": 7.1
+				},
+				"chaosgui:vagina_width_in_cm": {
+					"type": "float",
+					"value": 2.5
+				},
+				"chaosgui:max_children": {
+					"type": "int",
+					"value": 4
+				},
+				"chaosgui:period_in_ticks": {
+					"type": "int",
+					"value": 744000
+				}
 			}
 		},
 		"events": {
@@ -109,6 +203,14 @@
 				"run_command": {
 					"command": [
 						"tellraw @a {\"rawtext\":[{\"text\":\"§eCupa joined the game\"}]}"
+					]
+				}
+			},
+			"chaosgui:mob_talker_cupa_vagina_insert": {
+				"add": {
+					"tags": [
+						"insertion",
+						"vaginal"
 					]
 				}
 			},

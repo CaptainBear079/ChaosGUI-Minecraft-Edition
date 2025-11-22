@@ -1,0 +1,21 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "chaosgui:data_packet",
+			"is_experimental": false,
+			"is_spawnable": false,
+			"is_summonable": false
+		},
+		"components": {
+			"minecraft:physics": {
+				"has_gravity": false,
+				"has_collision": false
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			}
+		}
+	}
+}

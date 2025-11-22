@@ -88,84 +88,152 @@
                 "on_bred": 500,
                 "on_death": 100
             },
-            "chaosgui:sex": {
-                "gender": "female",
-                "virgin": true
+            "minecraft:dynamic_properties": {
+                "chaosgui:gender": {
+                    "type": "string",
+                    "value": "female"
+                },
+                "chaosgui:virgin": {
+                    "type": "bool",
+                    "value": true
+                },
+                "chaosgui:default_embarresment": {
+                    "type": "float",
+                    "value": 0.0
+                },
+                "chaosgui:sex": {
+                    "type": "float",
+                    "value": 95.0
+                },
+                "chaosgui:masturbation": {
+                    "type": "float",
+                    "value": 40.0
+                },
+                "chaosgui:default_stability": {
+                    "type": "float",
+                    "value": 95.0
+                },
+                "chaosgui:aquaphobia": {
+                    "type": "float",
+                    "value": 45.0
+                },
+                "chaosgui:painful_sex": {
+                    "type": "float",
+                    "value": 5.0
+                },
+                "chaosgui:mutilation": {
+                    "type": "float",
+                    "value": 15.0
+                },
+                "chaosgui:has_enderpearl": {
+                    "type": "bool",
+                    "value": true
+                },
+                "chaosgui:last_birth_control_pill": {
+                    "type": "int",
+                    "value": 0
+                },
+                "chaosgui:female_condom": {
+                    "type": "bool",
+                    "value": false
+                },
+                "chaosgui:spiral": {
+                    "type": "bool",
+                    "value": false
+                },
+                "chaosgui:default_arousal": {
+                    "type": "float",
+                    "value": 35.5
+                },
+                "chaosgui:arousal_addition": {
+                    "type": "float",
+                    "value": 1.0
+                },
+                "chaosgui:breasts": {
+                    "type": "string",
+                    "value": "flat"
+                },
+                "chaosgui:ass": {
+                    "type": "string",
+                    "value": "small"
+                },
+                "chaosgui:mouth_deepth_in_cm": {
+                    "type": "float",
+                    "value": 8.1
+                },
+                "chaosgui:clit_sensitivity": {
+                    "type": "float",
+                    "value": 9.8
+                },
+                "chaosgui:womb_capacity_in_l": {
+                    "type": "float",
+                    "value": 5.7
+                },
+                "chaosgui:ass_capacity_in_l": {
+                    "type": "float",
+                    "value": 7.1
+                },
+                "chaosgui:vagina_width_in_cm": {
+                    "type": "float",
+                    "value": 2.5
+                },
+                "chaosgui:max_children": {
+                    "type": "int",
+                    "value": 4
+                },
+                "chaosgui:period_in_ticks": {
+                    "type": "int",
+                    "value": 744000
+                }
+            }
+        }
+    },
+    "events": {
+        "minecraft:entity_spawned": {
+            "add": {
+                "component_groups": [
+                    "chaosgui:mob_talker_andr"
+                ]
             },
-            "chaosgui:endergirl_mentality": {
-                "default_embarresment": 0.0,
-                "sex": 95.0,
-                "masturbation": 40.0,
-                "default_stability": 95.0,
-                "aquaphobia": 45.0,
-                "painful_sex": 5.0,
-                "mutilation": 15.0
-            },
-            "chaosgui:endergirl_body": {
-                "has_enderpearl": true,
-                "last_birth_control_pill": 0,
-                "female_condom": false,
-                "spiral": false,
-                "default_arousal": 35.5,
-                "arousal_addition": 1.0,
-                "breasts": "flat",
-                "ass": "small",
-                "mouth_deepth_in_cm": 8.1,
-                "clit_sensitivity": 9.8,
-                "womb_capacity_in_l": 5.7,
-                "ass_capacity_in_l": 7.1,
-                "vagina_width_in_cm": 2.5,
-                "max_children": 4,
-                "period_in_ticks": 744000
+            "run_command": {
+                "command": [
+                    "event entity @s chaosgui:mob_talker_andr_join"
+                ]
             }
         },
-        "events": {
-            "minecraft:entity_spawned": {
-                "add": {
-                    "component_groups": [
-                        "chaosgui:mob_talker_andr"
-                    ]
-                },
-                "run_command": {
-                    "command": [
-                        "event entity @s chaosgui:mob_talker_andr_join"
-                    ]
-                }
-            },
-            "chaosgui:mob_talker_andr_join": {
-                "run_command": {
-                    "command": [
-                        "tellraw @a {\"rawtext\":[{\"text\":\"§eAndr joined the game\"}]}"
-                    ]
-                }
-            },
-            "chaosgui:mob_talker_andr_sa_none": {
-                "run_command": {
-                    "command": [
-                        "event entity @s RP_mob_talker_andr_sa_none"
-                    ]
-                }
-            },
-            "chaosgui:mob_talker_andr_sa_idle": {
-                "run_command": {
-                    "command": [
-                        "event entity @s RP_mob_talker_andr_sa_idle"
-                    ]
-                }
-            },
-            "chaosgui:mob_talker_andr_sa_walk": {
-                "run_command": {
-                    "command": [
-                        "event entity @s RP_mob_talker_andr_sa_walk"
-                    ]
-                }
-            },
-            "chaosgui:mob_talker_andr_sa_run": {
-                "run_command": {
-                    "command": [
-                        "event entity @s RP_mob_talker_andr_sa_run"
-                    ]
-                }
+        "chaosgui:mob_talker_andr_join": {
+            "run_command": {
+                "command": [
+                    "tellraw @a {\"rawtext\":[{\"text\":\"§eAndr joined the game\"}]}"
+                ]
+            }
+        },
+        "chaosgui:mob_talker_andr_sa_none": {
+            "run_command": {
+                "command": [
+                    "event entity @s RP_mob_talker_andr_sa_none"
+                ]
+            }
+        },
+        "chaosgui:mob_talker_andr_sa_idle": {
+            "run_command": {
+                "command": [
+                    "event entity @s RP_mob_talker_andr_sa_idle"
+                ]
+            }
+        },
+        "chaosgui:mob_talker_andr_sa_walk": {
+            "run_command": {
+                "command": [
+                    "event entity @s RP_mob_talker_andr_sa_walk"
+                ]
+            }
+        },
+        "chaosgui:mob_talker_andr_sa_run": {
+            "run_command": {
+                "command": [
+                    "event entity @s RP_mob_talker_andr_sa_run"
+                ]
             }
         }
     }
