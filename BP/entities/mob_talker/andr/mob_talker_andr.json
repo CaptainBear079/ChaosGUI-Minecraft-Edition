@@ -88,104 +88,12 @@
                 "on_bred": 500,
                 "on_death": 100
             },
-            "minecraft:dynamic_properties": {
-                "chaosgui:gender": {
-                    "type": "string",
-                    "value": "female"
-                },
-                "chaosgui:virgin": {
-                    "type": "bool",
-                    "value": true
-                },
-                "chaosgui:default_embarresment": {
-                    "type": "float",
-                    "value": 0.0
-                },
-                "chaosgui:sex": {
-                    "type": "float",
-                    "value": 95.0
-                },
-                "chaosgui:masturbation": {
-                    "type": "float",
-                    "value": 40.0
-                },
-                "chaosgui:default_stability": {
-                    "type": "float",
-                    "value": 95.0
-                },
-                "chaosgui:aquaphobia": {
-                    "type": "float",
-                    "value": 45.0
-                },
-                "chaosgui:painful_sex": {
-                    "type": "float",
-                    "value": 5.0
-                },
-                "chaosgui:mutilation": {
-                    "type": "float",
-                    "value": 15.0
-                },
-                "chaosgui:has_enderpearl": {
-                    "type": "bool",
-                    "value": true
-                },
-                "chaosgui:last_birth_control_pill": {
-                    "type": "int",
-                    "value": 0
-                },
-                "chaosgui:female_condom": {
-                    "type": "bool",
-                    "value": false
-                },
-                "chaosgui:spiral": {
-                    "type": "bool",
-                    "value": false
-                },
-                "chaosgui:default_arousal": {
-                    "type": "float",
-                    "value": 35.5
-                },
-                "chaosgui:arousal_addition": {
-                    "type": "float",
-                    "value": 1.0
-                },
-                "chaosgui:breasts": {
-                    "type": "string",
-                    "value": "flat"
-                },
-                "chaosgui:ass": {
-                    "type": "string",
-                    "value": "small"
-                },
-                "chaosgui:mouth_deepth_in_cm": {
-                    "type": "float",
-                    "value": 8.1
-                },
-                "chaosgui:clit_sensitivity": {
-                    "type": "float",
-                    "value": 9.8
-                },
-                "chaosgui:womb_capacity_in_l": {
-                    "type": "float",
-                    "value": 5.7
-                },
-                "chaosgui:ass_capacity_in_l": {
-                    "type": "float",
-                    "value": 7.1
-                },
-                "chaosgui:vagina_width_in_cm": {
-                    "type": "float",
-                    "value": 2.5
-                },
-                "chaosgui:max_children": {
-                    "type": "int",
-                    "value": 4
-                },
-                "chaosgui:period_in_ticks": {
-                    "type": "int",
-                    "value": 744000
-                }
-            }
+            "chaosgui:sex": {
+                "gender": "female",
+                "virgin": true
+            },
+            "chaosgui:endergirl_mentality": {},
+            "chaosgui:endergirl_body": {}
         }
     },
     "events": {
